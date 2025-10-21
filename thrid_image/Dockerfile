@@ -1,5 +1,5 @@
 FROM ubuntu:22.04
 
-RUN apt update && RUN apt install -y git
+RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
